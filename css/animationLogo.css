@@ -1,0 +1,43 @@
+/* The animation code */
+@keyframes animatedRotate {
+  0% {
+    filter: invert(0%);
+    border-radius: 0%;
+  }
+
+  25% {
+    filter: invert(50%);
+    transform: rotate(90deg);
+  }
+
+  50% {
+    filter: invert(100%);
+    transform: rotate(180deg);
+  }
+
+  75% {
+    filter: invert(50%);
+    transform: rotate(270deg);
+  }
+
+  100% {
+    filter: invert(0%);
+    transform: rotate(360deg);
+  }
+}
+
+/* The element to apply the animation to */
+img:hover {
+  margin: 5%;
+  width: 10rem;
+  height: 10rem;
+  animation-name: animatedRotate;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.img {
+  margin: 5%;
+  width: 10rem;
+  height: 10rem;
+}
